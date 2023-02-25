@@ -66,6 +66,7 @@ class Admin_PLUGIN{
                 text-align: center;
             }
         </style>
+        <h3 style="text-align:center;">Shortcode : [from-submit-short-code]</h3>
         <h1 class="heading-from">ALL From Submiton Data</h1>
         <table class="td-from" border="1">
             <tr>
