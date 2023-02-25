@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+
+.PLUGIN_add_menu_page_style_box {
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.041);
+    max-width: 25%;
+    margin-top: 22px;
+    flex-direction: column;
+    padding: 28px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+}
+.PLUGIN_add_menu_page_style_box-main-area {
+    display: flex;
+    justify-content: start;
+}
+.td-from {
+    margin-top: 30px;
+    box-shadow: 1px 1px 11px 5px #00000017;
+    border-radius: 5px;
+}
+input#d-btn {
+    background-color: red;
+    border: none;
+    padding: 10px 22px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 29px;
+    cursor: pointer;
+}
