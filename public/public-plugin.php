@@ -51,7 +51,7 @@ class Public_PLUGIN{
             }
             
             $wpdb->insert(
-                'wp_custom_from_data_show_all',
+                'wpt0_custom_from_data_show_all',
                 array(
                 'newspaper' => $newspaper,
                 'txt_name' => $txt_name,
@@ -90,7 +90,7 @@ class Public_PLUGIN{
                     <form action="" method="POST" name="frm_contact" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-md-12 form-group row-fluid">
-                                <h3><?php if(isset($dataget)){echo "Submit done";} ?></h3>
+                               
                                 <h3>শ্রেণীভুক্ত বিজ্ঞাপন</h3>
                                 <label for="select_newspaper">পত্রিকা বাছাই করুন</label>
                                 <select class="form-control form-control-lg news_portal" id="select_newspaper"

@@ -4,18 +4,18 @@ Plugin Name:       From Plugin Lrb
 Plugin URI:        https://lrbinventiveit.com/from-plugin
 Description:       Customs From Plugin
 Version:           1.10.3
-Requires at least: 5.2
-Requires PHP:      7.2
+Requires at least: 5.6
+Tested up to:      5.7
+Requires PHP:      5.6
 Author:            lrbinventiveit
 Author URI:        https://lrbinventiveit.com/
 License:           GPL v2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:       from-plugin  
-Domain Path:       /languages
+Text Domain:       from-plugin 
 */
 
 if(!defined('ABSPATH')){
-    header("Location: /pd");
+    header("Location: /");
     die("");
 }
 
@@ -38,7 +38,7 @@ function from_plugin_activate() {
 //db
 
 global $wpdb;
-$table_name_from = $wpdb->prefix . 'custom_from_data_show_all';
+$table_name_from = "wpt0_custom_from_data_show_all";
 
 $sql = "CREATE TABLE $table_name_from (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -58,7 +58,7 @@ $sql = "CREATE TABLE $table_name_from (
 $wpdb->query($sql);
 
 
-$table_name_insert = $wpdb->prefix . 'custom_from_data_show_all';
+$table_name_insert = "wpt0_custom_from_data_show_all";
 
 $data = array(
     'newspaper' => 'প্রথম আলো',
@@ -88,7 +88,7 @@ function from_plugin_deactivation(){
 
 global $wpdb;
 
-$table_name_from = $wpdb->prefix . 'custom_from_data_show_all';
+$table_name_from = "wpt0_custom_from_data_show_all";
 
 $sql = "DROP TABLE IF EXISTS $table_name_from;";
 

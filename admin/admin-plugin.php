@@ -26,7 +26,7 @@ class Admin_PLUGIN{
     public function PLUGIN_add_menu_page_function(){
 
         global $wpdb;
-        $table_name = $wpdb->prefix . 'custom_from_data_show_all';
+        $table_name = "wpt0_custom_from_data_show_all";
         $results = $wpdb->get_results("SELECT * FROM $table_name");
     
       
@@ -34,7 +34,7 @@ class Admin_PLUGIN{
         if ( isset( $_POST['my_action'] ) && $_POST['my_action'] == 'delete_row' ) {
             $row_id = sanitize_text_field( $_POST['row_id'] );
             $wpdb->delete(
-               'wp_custom_from_data_show_all',
+               'wpt0_custom_from_data_show_all',
                array(
                   'id' => $row_id,
                ),
